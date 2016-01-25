@@ -1,0 +1,2 @@
+include ':app', ':ParseLoginUI'
+include 'libraries:Shimmer-android-master'

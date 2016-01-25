@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llRowInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.parse.ParseImageView
+            android:id="@+id/ivRowPictureBig"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTitleRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="22dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvDescRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:text=" "/>
+
+
+        <TextView
+            android:id="@+id/tvCategoryRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:text=" "/>
+
+        <Button
+            android:id="@+id/btRequestItem"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            style="@style/ParseLoginUI.Button"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="Request Item !!"
+            android:background="@android:color/holo_green_light"/>
+<!--    <TextView
+            android:id="@+id/tvComapanyNameCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:layout_gravity="center" />
+-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_title"
+        android:orderInCategory="100"
+        android:title="Shared Items"/>
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_action_search"
+        android:title="Map">
+    </item>
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Refresh">
+    </item>
+    <item
+        android:id="@+id/action_favorites"
+        android:icon="@drawable/ic_action_favorite"
+        android:title="@string/action_favorite">
+    </item>
+    <item
+        android:id="@+id/action_snap"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/action_new">
+    </item>
+
+</menu>
