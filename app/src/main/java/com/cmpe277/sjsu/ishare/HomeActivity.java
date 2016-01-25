@@ -21,9 +21,6 @@ import com.parse.ui.ParseLoginBuilder;
  * is currently logged in.
  */
 
-/**
- * Created by Santanu on 4/28/2015.
- */
 public class HomeActivity extends Activity{
 
     private static final int LOGIN_REQUEST = 0;
@@ -33,7 +30,7 @@ public class HomeActivity extends Activity{
     private TextView nameTextView;
     private Button loginOrLogoutButton;
 
-    //santanu
+   
     private Button showItemList;
 
     private ParseUser currentUser;
@@ -54,7 +51,6 @@ public class HomeActivity extends Activity{
         nameTextView = (TextView) findViewById(R.id.profile_name);
         loginOrLogoutButton = (Button) findViewById(R.id.login_or_logout_button);
 
-        //santanu added
         showItemList = (Button)findViewById(R.id.back_to_application_button);
         showItemList.setOnClickListener(new OnClickListener() {
             @Override
@@ -123,7 +119,7 @@ public class HomeActivity extends Activity{
         }
         loginOrLogoutButton.setText(R.string.profile_logout_button_label);
 
-        //santanu added
+       
         showItemList.setVisibility(View.VISIBLE);
     }
 
@@ -136,7 +132,6 @@ public class HomeActivity extends Activity{
         nameTextView.setText("");
         loginOrLogoutButton.setText(R.string.profile_login_button_label);
 
-        //santanu added
         showItemList.setVisibility(View.GONE);
     }
 

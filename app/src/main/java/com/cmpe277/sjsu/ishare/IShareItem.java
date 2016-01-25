@@ -6,9 +6,6 @@ import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
-/**
- * Created by ryan_vo on 4/27/15.
- */
 @ParseClassName("IshareItem")
 public class IShareItem extends ParseObject {
     public IShareItem() {
@@ -56,7 +53,6 @@ public class IShareItem extends ParseObject {
     }
 
 
-    //santanu new add
     public String getRequested() {
         return getString("requested");
     }

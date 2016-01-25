@@ -1,9 +1,5 @@
 package com.cmpe277.sjsu.ishare;
 
-/**
- * Created by ryan_vo on 4/30/15.
- */
-
 import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;

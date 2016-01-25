@@ -27,7 +27,7 @@ public class NewItemActivity extends Activity {
         //getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
 
-        //santanu adding actionbar again - second one
+      
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 

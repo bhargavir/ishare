@@ -16,9 +16,6 @@ import com.parse.ParseFile;
 import com.parse.ParseImageView;
 import com.parse.ParseQueryAdapter;
 
-/**
- * Created by Santanu on 4/28/2015.
- */
 public class ItemListActivity extends ListActivity
 {
 
@@ -32,7 +29,7 @@ public class ItemListActivity extends ListActivity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //santanu adding actionbar
+       
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
 
         ActionBar mActionBar =  getActionBar();
@@ -76,7 +73,7 @@ public class ItemListActivity extends ListActivity
             public void onClick(View view) {
                 //Toast.makeText(getApplicationContext(), "Refresh Clicked!",Toast.LENGTH_LONG).show();
 
-                //santanu -- refreshing the elements
+              
                 mainAdapter.loadObjects();
                 setListAdapter(mainAdapter);
 
@@ -111,9 +108,7 @@ public class ItemListActivity extends ListActivity
         mActionBar.setDisplayShowCustomEnabled(true);
 
 
-        //old code starts from here -- santanu
-        // need to modify the listview adapter as per need
-        //santanu changed
+        
         //getListView().setClickable(false);
         getListView().setClickable(true);
 
@@ -134,7 +129,6 @@ public class ItemListActivity extends ListActivity
     //    Toast.makeText(getApplicationContext(), "@@@ at ItemListActivity"+mainAdapter, Toast.LENGTH_LONG).show();
     }
 
-    //Santanu -- need to put onCLick item here
     @Override
     protected void onListItemClick (ListView l, View v, int position, long id) {
         //Toast.makeText(this, "Clicked row " + position, Toast.LENGTH_SHORT).show();
@@ -172,7 +166,7 @@ public class ItemListActivity extends ListActivity
         switch (item.getItemId()) {
 
             case R.id.action_refresh: {
-               // santanu comment
+              
                // updateItemList();
                 break;
             }
@@ -196,7 +190,7 @@ public class ItemListActivity extends ListActivity
     }
 
     private void showFavorites() {
-       //santanu comment
+      
        // favoritesAdapter.loadObjects();
        // setListAdapter(favoritesAdapter);
     }

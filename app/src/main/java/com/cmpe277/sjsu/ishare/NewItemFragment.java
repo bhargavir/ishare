@@ -173,7 +173,7 @@ public class NewItemFragment extends Fragment {
         });
 
         // Until the user has taken a photo, hide the preview
-        //santanu changing
+      
        // itemPreview = (ParseImageView) v.findViewById(R.id.meal_preview_image);
        // itemPreview.setVisibility(View.INVISIBLE);
 

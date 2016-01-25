@@ -12,9 +12,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-/**
- * Created by Santanu on 4/30/2015.
- */
+
 public class RequestedList extends ListActivity {
 
     //private ParseQueryAdapter<IShareItem> mainAdapter;
@@ -27,7 +25,7 @@ public class RequestedList extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //santanu adding actionbar
+        
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
 
         ActionBar mActionBar =  getActionBar();
@@ -86,7 +84,6 @@ public class RequestedList extends ListActivity {
         //    Toast.makeText(getApplicationContext(), "@@@ at ItemListActivity"+mainAdapter, Toast.LENGTH_LONG).show();
     }
 
-    //Santanu -- need to put onCLick item here
     @Override
     protected void onListItemClick (ListView l, View v, int position, long id) {
         //Toast.makeText(this, "Clicked row " + position, Toast.LENGTH_SHORT).show();
@@ -124,7 +121,7 @@ public class RequestedList extends ListActivity {
         switch (item.getItemId()) {
 
             case R.id.action_refresh: {
-               // santanu comment
+             
                // updateItemList();
                 break;
             }
@@ -148,7 +145,7 @@ public class RequestedList extends ListActivity {
     }
 
     private void showFavorites() {
-        //santanu comment
+     
         // favoritesAdapter.loadObjects();
         // setListAdapter(favoritesAdapter);
     }

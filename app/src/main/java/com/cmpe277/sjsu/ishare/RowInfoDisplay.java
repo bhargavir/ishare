@@ -22,9 +22,6 @@ import com.parse.ui.ParseLoginBuilder;
 
 import java.util.List;
 
-/**
- * Created by Santanu on 4/30/2015.
- */
 public class RowInfoDisplay extends Activity{
 
     private String titleRow, descRow, categoryRow;
@@ -98,7 +95,7 @@ public class RowInfoDisplay extends Activity{
         requestItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //santanu try
+                
                 ParseQuery<IShareItem> reqQuery = ParseQuery.getQuery(IShareItem.class);
                 reqQuery.whereEqualTo("title",titleRow);
                 reqQuery.whereEqualTo("description",descRow);

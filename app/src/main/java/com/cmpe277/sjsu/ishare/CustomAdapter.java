@@ -29,7 +29,7 @@ public class CustomAdapter extends ParseQueryAdapter<ParseObject> {
     @Override
     public View getItemView(ParseObject object, View v, ViewGroup parent) {
         if (v == null) {
-        //santanu
+        //
         //    v = View.inflate(getContext(), R.layout.urgent_item, null);
         }
 
@@ -48,7 +48,7 @@ public class CustomAdapter extends ParseQueryAdapter<ParseObject> {
         titleTextView.setText(object.getString("title"));
 
         // Add a reminder of how long this item has been outstanding
-        //santanu
+        //
         //TextView timestampView = (TextView) v.findViewById(R.id.timestamp);
         //timestampView.setText(object.getCreatedAt().toString());
         return v;
